@@ -1,0 +1,24 @@
+.button {
+  font-weight: 500;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+}
+.button__primary {
+  background: #fabd4e;
+  color: black;
+}
+.button__primary:hover {
+  background: #b2873a;
+}
+.button__secondary {
+  background: #000000;
+  color: #ffffff;
+}
+.button__secondary:hover {
+  background: #313131;
+}
+.button__small {
+  padding: 15px 30px;
+}
+
+/*# sourceMappingURL=Button.module.css.map */

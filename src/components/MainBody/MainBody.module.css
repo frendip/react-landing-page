@@ -1,0 +1,17 @@
+.body__wrapper {
+  padding-top: 150px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.bodySectionPositioning {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.programCardListPositioning {
+  padding-bottom: 100px;
+}
+
+/*# sourceMappingURL=MainBody.module.css.map */

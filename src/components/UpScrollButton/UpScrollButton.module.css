@@ -1,0 +1,39 @@
+.upScrollButton {
+  position: fixed;
+  left: 10px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: #fabd4e;
+  opacity: 0.75;
+}
+.upScrollButton__hide {
+  display: none;
+}
+.upScrollButton:hover, .upScrollButton:focus {
+  opacity: 1;
+}
+.upScrollButton:before, .upScrollButton:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.upScrollButton:before {
+  width: 5px;
+  height: 25px;
+  border-radius: 3px 3px 0 0;
+  background-color: black;
+}
+.upScrollButton:after {
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+
+/*# sourceMappingURL=UpScrollButton.module.css.map */

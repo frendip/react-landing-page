@@ -1,0 +1,18 @@
+.bodySection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bodySection__title {
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.bodySection__subtitle {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+/*# sourceMappingURL=BodySection.module.css.map */
