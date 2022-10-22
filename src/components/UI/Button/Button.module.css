@@ -20,5 +20,11 @@
 .button__small {
   padding: 15px 30px;
 }
+.button__medium {
+  padding: 15px 60px;
+}
+.button__large {
+  padding: 15px 180px;
+}
 
 /*# sourceMappingURL=Button.module.css.map */

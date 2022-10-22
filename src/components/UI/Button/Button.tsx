@@ -14,13 +14,13 @@ const variantStyle = {
 
 const sizeStyle = {
     small: classes.button__small,
-    medium: classes.button__small,
-    large: classes.button__small,
+    medium: classes.button__medium,
+    large: classes.button__large,
 }
 
-const Button: FC<ButtonProps> = ({ size = "medium", variant = "primary",  ...rest}) => {
+const Button: FC<ButtonProps> = ({ className, size = "small", variant = "primary",  ...rest}) => {
     return (
-        <button className={clsx(classes.button,variantStyle[variant], sizeStyle[size])} {...rest}/>
+        <button className={clsx(className, classes.button,variantStyle[variant], sizeStyle[size])} {...rest}/>
     );
 };
 

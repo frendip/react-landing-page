@@ -7,18 +7,18 @@ interface ProgramCardProps {
     children: React.ReactNode,
     variantCard?: "primary" | "secondary",
     variantButton?: "primary" | "secondary",
-    img: string
-    href: string
+    img: string,
+    href: string,
 }
 
-const variantStyle = {
+const variantCardStyle = {
     primary: classes.programCard__primary,
     secondary: classes.programCard__secondary,
 }
 
 const ProgramCard: FC<ProgramCardProps> = ({children, variantCard = "primary", variantButton= "secondary", img, href}) => {
     return (
-        <div className={clsx(classes.programCard, variantStyle[variantCard])}>
+        <div className={clsx(classes.programCard, variantCardStyle[variantCard])}>
             <div className={classes.programCard__row}>
                 <div className={classes.programCard__logo}><img src={img} alt="#"/></div>
                 <h2 className={classes.programCard__title}>{children}</h2>
