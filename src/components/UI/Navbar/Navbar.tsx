@@ -20,10 +20,10 @@ const Navbar = () => {
                     <ScrollLink to="lessons" spy={true} smooth={true} offset={-250} duration={500}>Как проходят занятия?</ScrollLink>
                 </li>
                 <li className={classes.navbar__item}>
-                    <ScrollLink to="offers" spy={true} smooth={true} offset={50} duration={500}>Актуальные предложения</ScrollLink>
+                    <ScrollLink to="offers" spy={true} smooth={true} offset={-75} duration={500}>Актуальные предложения</ScrollLink>
                 </li>
                 <li className={classes.navbar__item}>
-                    <ScrollLink to="faq" spy={true} smooth={true} offset={50} duration={500}>FAQ</ScrollLink>
+                    <ScrollLink to="faq" spy={true} smooth={true} offset={-20} duration={500}>FAQ</ScrollLink>
                 </li>
             </ul>
             <UpScrollButton/>

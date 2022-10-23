@@ -1,0 +1,65 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: black;
+  color: #808080;
+  &__wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    gap: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logoTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 30px;
+  }
+  &__logo {
+    width: 75px;
+    height: 75px;
+    border: 3px solid #808080;
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &__mailIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__mail {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__icon {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  &__copyright {
+    border-top: 1px solid #808080;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+  }
+}

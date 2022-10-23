@@ -4,6 +4,7 @@ import BodySection from "../BodySection/BodySection";
 import ProgramCardList from "../ProgramCards/ProgramCardList";
 import PromotionList from "../Promotions/PromotionList";
 import clsx from "clsx";
+import Faq from "../Faq/Faq";
 
 const MainBody = () => {
     return (
@@ -17,6 +18,7 @@ const MainBody = () => {
                              subtitle={"Занятия проводятся на онлайн - платформах Google Meet или Zoom в мини - группах до 5 человек. Длительность занятия составляет 60 минут."}
                              href={"#"} buttonText={"Смотреть курсы"}/>
                 <PromotionList className={classes.positioning} id={"offers"}/>
+                <Faq className={classes.positioning} id={"faq"}/>
             </div>
         </section>
     );
