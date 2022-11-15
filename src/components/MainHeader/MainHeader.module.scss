@@ -86,10 +86,47 @@
   }
 }
 
+.slider {
+  height: 140px;
+  &__itemInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__itemLogo {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    margin: 10px 0 5px 0;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  &__itemText {
+    text-align: center;
+    font-size: 10px;
+    padding: 0 5px 5px 5px;
+    font-weight: 500;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     &__wrapper {
       max-width: 830px;
+    }
+  }
+
+  .slider {
+    &__itemLogo {
+      height: 70px;
+      width: 70px;
     }
   }
 }
@@ -118,6 +155,17 @@
     }
     &__info {
       justify-content: flex-start;
+    }
+  }
+
+  .slider {
+    height: 120px;
+    &__itemLogo {
+      height: 50px;
+      width: 50px;
+    }
+    &__itemText {
+      font-size: 8px;
     }
   }
 }

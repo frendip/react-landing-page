@@ -2,8 +2,26 @@ import React from 'react';
 import classes from "./MainHeader.module.scss";
 import Button from "../UI/Button/Button";
 import Slider from "../Slider/Slider";
+import slide1 from "../../pictures/slide1.png";
+import slide2 from "../../pictures/slide2.png";
+import slide3 from "../../pictures/slide3.png";
 
 const MainHeader = () => {
+    const sliderElements: JSX.Element[] = [
+        <div className={classes.slider__itemInner}>
+            <div className={classes.slider__itemLogo}><img src={slide1} alt="sl1"/></div>
+            <div className={classes.slider__itemText}>Занятия в Google Meet</div>
+        </div>,
+        <div className={classes.slider__itemInner}>
+            <div className={classes.slider__itemLogo}><img src={slide2} alt="sl2"/></div>
+            <div className={classes.slider__itemText}>Молодые преподаватели, студенты ведущих ВУЗов страны</div>
+        </div>,
+        <div className={classes.slider__itemInner}>
+            <div className={classes.slider__itemLogo}><img src={slide3} alt="sl3"/></div>
+            <div className={classes.slider__itemText}>Курсы для любого возраста и уровня</div>
+        </div>,
+    ]
+
     return (
         <section className={classes.header} id={"main"}>
             <div className={classes.header__bg}></div>
@@ -21,7 +39,7 @@ const MainHeader = () => {
                     <div className={classes.header__sliderText}>
                         УДОБНАЯ ПЛАТФОРМА ДЛЯ ИЗУЧЕНИЯ ЯЗЫКА
                     </div>
-                    <Slider/>
+                    <Slider className={classes.slider} sliderElements={sliderElements}/>
                 </div>
             </div>
         </section>
