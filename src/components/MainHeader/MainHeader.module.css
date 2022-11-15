@@ -55,6 +55,9 @@
 .header__text li:last-child {
   padding: 0;
 }
+.header__link {
+  width: 0;
+}
 .header__slider {
   position: relative;
   top: 85px;
@@ -79,6 +82,34 @@
   font-weight: 700;
   font-size: 23px;
   line-height: 27px;
+}
+
+@media (max-width: 1200px) {
+  .header__wrapper {
+    max-width: 830px;
+  }
+}
+@media (max-width: 900px) {
+  .header__wrapper {
+    max-width: 550px;
+  }
+  .header__slider {
+    flex-direction: column;
+    height: 360px;
+    padding: 0 10px;
+    gap: 20px 0;
+  }
+  .header__sliderText {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 599px) {
+  .header__wrapper {
+    max-width: 350px;
+  }
+  .header__info {
+    justify-content: flex-start;
+  }
 }
 
 /*# sourceMappingURL=MainHeader.module.css.map */

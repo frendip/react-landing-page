@@ -71,4 +71,35 @@
   right: 10px;
 }
 
+@media (max-width: 1200px) {
+  .slider__itemLogo {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media (max-width: 599px) {
+  .slider {
+    height: 120px;
+  }
+  .slider__itemLogo {
+    height: 50px;
+    width: 50px;
+  }
+  .slider__itemText {
+    font-size: 8px;
+  }
+  .slider__itemPrev {
+    transform: translateX(-160%);
+  }
+  .slider__itemNext {
+    transform: translateX(60%);
+  }
+  .slider__buttonLeft {
+    left: 5px;
+  }
+  .slider__buttonRight {
+    right: 5px;
+  }
+}
+
 /*# sourceMappingURL=Slider.module.css.map */

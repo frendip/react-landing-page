@@ -71,3 +71,41 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .slider {
+    &__itemLogo {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 599px) {
+  .slider {
+    height: 120px;
+    &__itemLogo {
+      height: 50px;
+      width: 50px;
+    }
+    &__itemText {
+      font-size: 8px;
+    }
+    &__itemPrev {
+      transform: translateX(-160%);
+    }
+    &__itemNext {
+      transform: translateX(60%);
+    }
+    &__buttonLeft {
+      left: 5px;
+    }
+    &__buttonRight {
+      right: 5px;
+    }
+  }
+}
+

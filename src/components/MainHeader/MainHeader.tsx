@@ -15,7 +15,7 @@ const MainHeader = () => {
                         <li>Онлайн-школа английского языка для учеников любого уровня и возраста.</li>
                         <li>Подготовка к ЕГЭ, международным экзаменам и совершенствование вашего иностранного языка.</li>
                     </ul>
-                    <a href="#"><Button tabIndex={0} size={"small"} variant={"primary"}>Записаться</Button></a>
+                    <a href="#" className={classes.header__link}><Button tabIndex={0} size={"small"} variant={"primary"}>Записаться</Button></a>
                 </div>
                 <div className={classes.header__slider}>
                     <div className={classes.header__sliderText}>
