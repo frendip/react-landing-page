@@ -14,11 +14,20 @@
     background: #fabd4e;
     border-radius: 25px;
   }
+  &__itemSolo {
+    width: 50%;
+  }
   &__itemPrev {
     transform: translateX(-175%);
   }
   &__itemNext {
     transform: translateX(75%);
+  }
+  &__itemPrevOut {
+    transform: translateX(-1750%);
+  }
+  &__itemNextOut {
+    transform: translateX(750%);
   }
   &__button {
     display: flex;
@@ -36,11 +45,17 @@
       background: #b2873a;
     }
   }
-  &__buttonLeft {
+  &__buttonLeftTriple {
     left: 10px;
   }
-  &__buttonRight {
+  &__buttonRightTriple {
     right: 10px;
+  }
+  &__buttonLeftSolo {
+    left: 30px;
+  }
+  &__buttonRightSolo {
+    right: 30px;
   }
 }
 

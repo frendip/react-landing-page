@@ -5,6 +5,7 @@ import Slider from "../Slider/Slider";
 import slide1 from "../../pictures/slide1.png";
 import slide2 from "../../pictures/slide2.png";
 import slide3 from "../../pictures/slide3.png";
+import {useMediaQuery} from "react-responsive";
 
 const MainHeader = () => {
     const sliderElements: JSX.Element[] = [
@@ -39,7 +40,11 @@ const MainHeader = () => {
                     <div className={classes.header__sliderText}>
                         УДОБНАЯ ПЛАТФОРМА ДЛЯ ИЗУЧЕНИЯ ЯЗЫКА
                     </div>
-                    <Slider className={classes.slider} sliderElements={sliderElements}/>
+                    {
+                        useMediaQuery({ query: '(min-width: 599px)' }) ?
+                        <Slider className={classes.slider} sliderElements={sliderElements} position={"triple"}/> :
+                        <Slider className={classes.slider} sliderElements={sliderElements} position={"solo"}/>
+                    }
                 </div>
             </div>
         </section>

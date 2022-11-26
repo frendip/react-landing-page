@@ -15,11 +15,20 @@
   background: #fabd4e;
   border-radius: 25px;
 }
+.slider__itemSolo {
+  width: 50%;
+}
 .slider__itemPrev {
   transform: translateX(-175%);
 }
 .slider__itemNext {
   transform: translateX(75%);
+}
+.slider__itemPrevOut {
+  transform: translateX(-1750%);
+}
+.slider__itemNextOut {
+  transform: translateX(750%);
 }
 .slider__button {
   display: flex;
@@ -37,11 +46,17 @@
 .slider__button:hover {
   background: #b2873a;
 }
-.slider__buttonLeft {
+.slider__buttonLeftTriple {
   left: 10px;
 }
-.slider__buttonRight {
+.slider__buttonRightTriple {
   right: 10px;
+}
+.slider__buttonLeftSolo {
+  left: 30px;
+}
+.slider__buttonRightSolo {
+  right: 30px;
 }
 
 @media (max-width: 599px) {
