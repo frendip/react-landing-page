@@ -23,7 +23,7 @@ const ProgramCard: FC<ProgramCardProps> = ({children, variantCard = "primary", v
                 <div className={classes.programCard__logo}><img src={img} alt="#"/></div>
                 <h2 className={classes.programCard__title}>{children}</h2>
             </div>
-            <a href={href}><Button tabIndex={0} variant={variantButton}>Подробнее</Button></a>
+            <a href={href} className={classes.programCard__button}><Button tabIndex={0} variant={variantButton}>Подробнее</Button></a>
         </div>
     );
 };
