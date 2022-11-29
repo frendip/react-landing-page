@@ -88,10 +88,13 @@
   height: 140px;
 }
 .slider__itemInner {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #fabd4e;
+  border-radius: 25px;
 }
 .slider__itemLogo {
   height: 80px;

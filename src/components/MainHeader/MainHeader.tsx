@@ -42,8 +42,8 @@ const MainHeader = () => {
                     </div>
                     {
                         useMediaQuery({ query: '(min-width: 599px)' }) ?
-                        <Slider className={classes.slider} sliderElements={sliderElements} position={"triple"}/> :
-                        <Slider className={classes.slider} sliderElements={sliderElements} position={"solo"}/>
+                        <Slider className={classes.slider} sliderElements={sliderElements} position={"triple"} buttonSize={"small"} buttonPosition={"far"}/> :
+                        <Slider className={classes.slider} sliderElements={sliderElements} position={"solo"} buttonSize={"medium"} buttonPosition={"close"}/>
                     }
                 </div>
             </div>

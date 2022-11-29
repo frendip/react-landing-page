@@ -5,9 +5,25 @@ import classes from './Slider.module.scss'
 interface SliderProps extends HTMLAttributes<HTMLDivElement>{
     sliderElements: JSX.Element[];
     position?: "solo" | "triple";
+    buttonSize?: "small" | "medium" | "large";
+    buttonPosition?: "close" | "far";
 }
 
-const Slider: FC<SliderProps> = ({className, sliderElements, position = "triple"}) => {
+const positionStyle = {
+    solo: [classes.slider__itemPrevOut, classes.slider__itemSolo, classes.slider__itemNextOut],
+    triple: [classes.slider__itemPrev, classes.slider__item, classes.slider__itemNext]
+}
+const buttonSizeStyle = {
+    small: classes.slider__buttonSmall,
+    medium: classes.slider__buttonMedium,
+    large: classes.slider__buttonLarge,
+}
+const buttonPositionStyle = {
+    close: [classes.slider__buttonCloseLeft, classes.slider__buttonCloseRight],
+    far: [classes.slider__buttonFarLeft, classes.slider__buttonFarRight],
+}
+
+const Slider: FC<SliderProps> = ({className, sliderElements, position = "triple", buttonSize = "small", buttonPosition = "far"}) => {
 
     const [activeIndex, setActiveIndex] = useState<number>(1);
 
@@ -32,49 +48,29 @@ const Slider: FC<SliderProps> = ({className, sliderElements, position = "triple"
 
     return (
         <div className={clsx(className, classes.slider)}>
-            {position === "triple" ? <button onClick={goPrev} className={clsx(classes.slider__button, classes.slider__buttonLeftTriple)}>{'<'}</button> :
-                <button onClick={goPrev} className={clsx(classes.slider__button, classes.slider__buttonLeftSolo)}>{'<'}</button>
-            }
+            <button onClick={goPrev} className={clsx(classes.slider__button, buttonPositionStyle[buttonPosition][0], buttonSizeStyle[buttonSize])}>{'<'}</button>
             {sliderElements.map((value, index): JSX.Element | undefined => {
                 if (index === prevIndex) {
-                    if (position === "triple") {
-                        return (
-                            <div key={index} className={clsx(classes.slider__item, classes.slider__itemPrev)}>
-                                {value}
-                            </div>)
-                    } else {
-                        return (
-                            <div key={index} className={clsx(classes.slider__item, classes.slider__itemPrevOut)}>
-                                {value}
-                            </div>)
-                    }
+                    return (
+                        <div key={index} className={clsx(classes.slider__item, positionStyle[position][0])}>
+                            {value}
+                        </div>)
                 } else if (index === activeIndex) {
-                    if (position === "triple") {
-                        return (<div key={index} className={classes.slider__item}>
-                            {value}
-                        </div>)
-                    } else {
-                        return (<div key={index} className={clsx(classes.slider__item, classes.slider__itemSolo)}>
-                            {value}
-                        </div>)
-                    }
+                    return (<div key={index} className={clsx(classes.slider__item, positionStyle[position][1])}>
+                        {value}
+                    </div>)
                 } else if (index === nextIndex) {
-                    if (position === "triple") {
-                        return (
-                            <div key={index} className={clsx(classes.slider__item, classes.slider__itemNext)}>
-                                {value}
-                            </div>)
-                    } else {
-                        return (
-                            <div key={index} className={clsx(classes.slider__item, classes.slider__itemNextOut)}>
-                                {value}
-                            </div>)
-                    }
+                    return (
+                        <div key={index} className={clsx(classes.slider__item, positionStyle[position][2])}>
+                            {value}
+                        </div>)
                 }
-                return undefined
+                return (
+                    <div key={index} className={clsx(classes.slider__item, classes.slider__itemNextOut)}>
+                        {value}
+                    </div>)
             })}
-            {position === "triple" ? <button onClick={goNext} className={clsx(classes.slider__button, classes.slider__buttonRightTriple)}>{'>'}</button> :
-                <button onClick={goNext} className={clsx(classes.slider__button, classes.slider__buttonRightSolo)}>{'>'}</button>}
+            <button onClick={goNext} className={clsx(classes.slider__button, buttonPositionStyle[buttonPosition][1], buttonSizeStyle[buttonSize])}>{'>'}</button>
         </div>
     );
 };

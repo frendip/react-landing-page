@@ -12,8 +12,6 @@
   transition: all 0.2s;
   left: 50%;
   transform: translateX(-50%);
-  background: #fabd4e;
-  border-radius: 25px;
 }
 .slider__itemSolo {
   width: 50%;
@@ -35,22 +33,46 @@
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 25px;
   position: absolute;
-  height: 30px;
-  width: 30px;
   border-radius: 50%;
   background: #fabd4e;
   transition-duration: 0.2s;
 }
-.slider__button:hover {
-  background: #b2873a;
+.slider__buttonSmall {
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
 }
-.slider__buttonLeftTriple {
+.slider__buttonMedium {
+  font-size: 40px;
+  height: 45px;
+  width: 45px;
+}
+.slider__buttonLarge {
+  font-size: 55px;
+  height: 60px;
+  width: 60px;
+}
+.slider__buttonLeft {
   left: 10px;
 }
-.slider__buttonRightTriple {
+.slider__buttonRight {
   right: 10px;
+}
+.slider__buttonCloseLeft {
+  left: 30px;
+}
+.slider__buttonCloseRight {
+  right: 30px;
+}
+.slider__buttonFarLeft {
+  left: 10px;
+}
+.slider__buttonFarRight {
+  right: 10px;
+}
+.slider__button:hover {
+  background: #b2873a;
 }
 .slider__buttonLeftSolo {
   left: 30px;
