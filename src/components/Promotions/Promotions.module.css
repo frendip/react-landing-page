@@ -33,6 +33,9 @@
   left: 0;
   object-fit: cover;
 }
+.promotion__link {
+  display: flex;
+}
 .promotion__button {
   -webkit-box-shadow: 0 10px 13px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 10px 13px 2px rgba(0, 0, 0, 0.2);
@@ -52,6 +55,25 @@
 .promotion__info {
   text-align: center;
   padding-bottom: 20px;
+}
+.slider {
+  height: 550px;
+}
+
+@media (max-width: 600px) {
+  .promotion__header {
+    padding-bottom: 10px;
+  }
+  .promotion__subtitle {
+    text-align: center;
+  }
+  .promotion__logo {
+    height: 176px;
+    width: 220px;
+  }
+  .promotion__button {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=Promotions.module.css.map */

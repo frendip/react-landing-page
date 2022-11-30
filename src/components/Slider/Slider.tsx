@@ -6,7 +6,7 @@ interface SliderProps extends HTMLAttributes<HTMLDivElement>{
     sliderElements: JSX.Element[];
     position?: "solo" | "triple";
     buttonSize?: "small" | "medium" | "large";
-    buttonPosition?: "close" | "far";
+    buttonPosition?: "veryClose" | "close" | "far";
 }
 
 const positionStyle = {
@@ -19,6 +19,7 @@ const buttonSizeStyle = {
     large: classes.slider__buttonLarge,
 }
 const buttonPositionStyle = {
+    veryClose: [classes.slider__buttonVeryCloseLeft, classes.slider__buttonVeryCloseRight],
     close: [classes.slider__buttonCloseLeft, classes.slider__buttonCloseRight],
     far: [classes.slider__buttonFarLeft, classes.slider__buttonFarRight],
 }

@@ -32,6 +32,9 @@
       object-fit: cover;
     }
   }
+  &__link {
+    display: flex;
+  }
   &__button {
     -webkit-box-shadow: 0 10px 13px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 10px 13px 2px rgba(0, 0, 0, 0.2);
@@ -54,5 +57,27 @@
   }
   &__note {
 
+  }
+}
+
+.slider {
+  height: 550px;
+}
+
+@media (max-width: 600px) {
+  .promotion {
+    &__header {
+      padding-bottom: 10px;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+    &__logo {
+      height: 176px;
+      width: 220px;
+    }
+    &__button {
+      margin: 0 auto;
+    }
   }
 }

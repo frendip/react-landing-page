@@ -13,4 +13,26 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .body__wrapper {
+    max-width: 890px;
+  }
+}
+@media (max-width: 900px) {
+  .body__wrapper {
+    max-width: 600px;
+  }
+  .bodySectionPositioning {
+    max-width: 550px;
+  }
+}
+@media (max-width: 599px) {
+  .body__wrapper {
+    max-width: 400px;
+  }
+  .bodySectionPositioning {
+    max-width: 350px;
+  }
+}
+
 /*# sourceMappingURL=MainBody.module.css.map */

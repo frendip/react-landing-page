@@ -5,6 +5,7 @@ import clsx from "clsx";
 
 interface PromotionProps {
     variantButton?: "primary" | "secondary",
+    buttonSize?: "small" | "medium" | "large",
     variantText?: "primary" | "secondary",
     title: string,
     subtitle: string,
@@ -18,12 +19,12 @@ const variantTextStyle = {
     secondary: classes.promotion__secondary,
 }
 
-const Promotion: FC<PromotionProps> = ({variantButton = "primary", variantText= "primary", title, subtitle, info, img, href}) => {
+const Promotion: FC<PromotionProps> = ({variantButton = "primary", buttonSize = "large", variantText= "primary", title, subtitle, info, img, href}) => {
     return (
         <div className={classes.promotion}>
             <div className={classes.promotion__header}>
                 <div className={classes.promotion__logo}><img src={img} alt="prom"/></div>
-                <a href={href}><Button className={classes.promotion__button} tabIndex={0} variant={variantButton} size={"large"}>Получить</Button></a>
+                <a href={href} className={classes.promotion__link}><Button className={classes.promotion__button} tabIndex={0} variant={variantButton} size={buttonSize}>Получить</Button></a>
             </div>
             <h3 className={clsx(classes.promotion__title, variantTextStyle[variantText])}>{title}</h3>
             <div className={clsx(classes.promotion__subtitle, variantTextStyle[variantText])}>{subtitle}</div>

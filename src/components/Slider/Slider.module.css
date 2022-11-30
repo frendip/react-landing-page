@@ -59,6 +59,12 @@
 .slider__buttonRight {
   right: 10px;
 }
+.slider__buttonVeryCloseLeft {
+  left: 80px;
+}
+.slider__buttonVeryCloseRight {
+  right: 80px;
+}
 .slider__buttonCloseLeft {
   left: 30px;
 }
