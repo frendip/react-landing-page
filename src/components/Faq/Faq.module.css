@@ -80,4 +80,52 @@
   align-self: flex-end;
 }
 
+@media (max-width: 900px) {
+  .faqItem {
+    flex: 0 0 300px;
+  }
+  .faqItem__title {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .faqItem__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .faq__title {
+    padding: 0;
+    font-size: 28px;
+  }
+  .faqItem {
+    padding: 25px 20px;
+  }
+  .faqItem__title {
+    overflow-wrap: break-word;
+  }
+  .faqItem__left {
+    align-self: center;
+  }
+  .faqItem__right {
+    align-self: center;
+  }
+  .faqItem__primary .faqItem__number {
+    order: 0;
+  }
+  .faqItem__primary .faqItem__number:before {
+    display: none;
+  }
+  .faqItem__primary .faqItem__number:after {
+    content: "";
+    margin-left: 20px;
+    background: black;
+    width: 1px;
+    height: 100%;
+  }
+  .faqItem__secondary .faqItem__number:after {
+    content: "";
+    margin-left: 20px;
+  }
+}
+
 /*# sourceMappingURL=Faq.module.css.map */
