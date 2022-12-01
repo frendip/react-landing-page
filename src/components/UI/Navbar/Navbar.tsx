@@ -18,7 +18,7 @@ const Navbar = () => {
                         <ScrollLink to="about-us" spy={true} smooth={true} offset={-250} duration={500} onClick={() => setMenuActive(!menuActive)}>О нас</ScrollLink>
                     </li>
                     <li className={classes.navbar__item}>
-                        <ScrollLink to="prices" spy={true} smooth={true} offset={0} duration={500} onClick={() => setMenuActive(!menuActive)}>Курсы и цены</ScrollLink>
+                        <ScrollLink to="prices" spy={true} smooth={true} offset={-50} duration={500} onClick={() => setMenuActive(!menuActive)}>Курсы и цены</ScrollLink>
                     </li>
                     <li className={classes.navbar__item}>
                         <ScrollLink to="lessons" spy={true} smooth={true} offset={-250} duration={500} onClick={() => setMenuActive(!menuActive)}>Как проходят занятия?</ScrollLink>
