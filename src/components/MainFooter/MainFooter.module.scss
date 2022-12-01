@@ -63,3 +63,49 @@
     font-size: 19px;
   }
 }
+
+@media (max-width: 1200px) {
+  .footer {
+    &__wrapper {
+      max-width: 890px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    &__wrapper {
+      max-width: 600px;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .footer {
+    &__wrapper {
+      max-width: 350px;
+    }
+    &__info {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+    &__logo {
+      width: 60px;
+      height: 60px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__mail {
+      font-size: 15px;
+      text-align: center;
+    }
+    &__icons {
+      justify-content: center;
+    }
+    &__copyright {
+      padding-top: 10px;
+      font-size: 14px;
+    }
+  }
+}
