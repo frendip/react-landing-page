@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-landing-page/static/css/main.3f544d3e.css",
+    "main.js": "/react-landing-page/static/js/main.3039a78d.js",
+    "static/media/promotion1.png": "/react-landing-page/static/media/promotion1.1011d2b90ef17f757714.png",
+    "static/media/main-header-bg.jpg": "/react-landing-page/static/media/main-header-bg.d92290475f28fabd74a1.jpg",
+    "static/media/promotion2.png": "/react-landing-page/static/media/promotion2.a07956a3bcd5dcc344ae.png",
+    "static/media/programCard1.png": "/react-landing-page/static/media/programCard1.f23861f6e12ac71a6279.png",
+    "static/media/telegram-icon.svg": "/react-landing-page/static/media/telegram-icon.b9d6afd5bc42c94d5ab4fdbc7d29d440.svg",
+    "static/media/inst-icon.svg": "/react-landing-page/static/media/inst-icon.0cbb55f36cc3bfa8f11b7e16df45894d.svg",
+    "static/media/vk-icon.svg": "/react-landing-page/static/media/vk-icon.ccee48696ee0fdc630d4d8b22d67002e.svg",
+    "index.html": "/react-landing-page/index.html",
+    "main.3f544d3e.css.map": "/react-landing-page/static/css/main.3f544d3e.css.map",
+    "main.3039a78d.js.map": "/react-landing-page/static/js/main.3039a78d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f544d3e.css",
+    "static/js/main.3039a78d.js"
+  ]
+}
