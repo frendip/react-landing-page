@@ -50,6 +50,9 @@
     font-size: 30px;
     font-weight: 700;
   }
+  &__button {
+    width: 0;
+  }
 }
 
 .slider {
@@ -81,6 +84,7 @@
       font-size: 18px;
     }
     &__button {
+      width: auto;
       margin: 0 auto;
     }
   }

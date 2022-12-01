@@ -47,6 +47,9 @@
   font-size: 30px;
   font-weight: 700;
 }
+.programCard__button {
+  width: 0;
+}
 
 .slider {
   height: 350px;
@@ -75,6 +78,7 @@
     font-size: 18px;
   }
   .programCard__button {
+    width: auto;
     margin: 0 auto;
   }
 }

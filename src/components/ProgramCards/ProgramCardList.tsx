@@ -15,7 +15,7 @@ interface ProgramCardListProps extends HTMLAttributes<HTMLDivElement> {
 const ProgramCardList: FC<ProgramCardListProps> = ({id, className}) => {
 
     const sliderElements: JSX.Element[] = [
-        <ProgramCard img={programCardLogo1} variantCard={"primary"} variantButton={"secondary"} href={"#"}>КУРС «STANDART»</ProgramCard>,
+        <ProgramCard img={programCardLogo1} variantCard={"primary"} variantButton={"secondary"} href={"##"}>КУРС «STANDART»</ProgramCard>,
         <ProgramCard img={programCardLogo2} variantCard={"secondary"} variantButton={"primary"} href={"##"}>КУРС «TALKY»</ProgramCard>,
         <ProgramCard img={programCardLogo4} variantCard={"primary"} variantButton={"secondary"} href={"####"}>МЕЖДУНАРОДНЫЕ ЭКЗАМЕНЫ</ProgramCard>,
         <ProgramCard img={programCardLogo3} variantCard={"secondary"} variantButton={"primary"} href={"###"}>КУРС «ЕГЭ»</ProgramCard>,
