@@ -82,6 +82,19 @@
   }
 }
 
+@media (max-width: 600px) {
+  .navbar {
+    &__list {
+      transform: translate(0, 0);
+      & > li {
+        text-align: center;
+        font-size: 25px;
+        margin: 0 0 25px 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .navbar {
     max-width: 870px;

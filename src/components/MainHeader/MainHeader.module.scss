@@ -136,6 +136,9 @@
 
 @media (max-width: 900px) {
   .header {
+    &__bg {
+      background: url("../../pictures/main-header-bg.jpg") center center/cover no-repeat;
+    }
     &__wrapper {
       max-width: 550px;
     }

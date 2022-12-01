@@ -35,6 +35,7 @@
   font-weight: 700;
   position: absolute;
   border-radius: 50%;
+  color: black;
   background: #fabd4e;
   transition-duration: 0.2s;
 }

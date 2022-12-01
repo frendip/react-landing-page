@@ -98,6 +98,7 @@
     font-size: 25px;
   }
   .programCard__button {
+    width: auto;
     margin: 0 auto;
   }
 }
@@ -109,7 +110,11 @@
     gap: 30px 0;
   }
   .programCard__title {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .programCard__button {
+    width: auto;
+    margin: 0 auto;
   }
 }
 
